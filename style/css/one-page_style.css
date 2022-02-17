@@ -1,0 +1,397 @@
+/* nunito-sans-regular - latin */
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 400px;
+  font-display: swap;
+  src: local('Nunito Sans Regular'), local('NunitoSans-Regular'),
+       url('../fonts/nunito-sans-v4-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/nunito-sans-v4-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* montserrat-regular - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400px;
+  font-display: swap;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'),
+       url('../fonts/montserrat-v13-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/montserrat-v13-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* montserrat-500 - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500px;
+  font-display: swap;
+  src: local('Montserrat Medium'), local('Montserrat-Medium'),
+       url('../fonts/montserrat-v13-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/montserrat-v13-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* montserrat-600 - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600px;
+  src: local('Montserrat SemiBold'), local('Montserrat-SemiBold'),
+       url('../fonts/montserrat-v13-latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/montserrat-v13-latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+body {
+  font-weight: 400px;
+  font-family: "Nunito Sans", Helvetica, Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 500px;
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+}
+
+.custom__header {
+  min-height: 670px;
+  background-color: #dee8ea;
+  background-image: url("../images/one-page/header-background.jpg");
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: cover;
+}
+
+.custom__navbar {
+  background-color: transparent;
+  font-weight: 500px;
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: rgba(0, 0, 0, 1);
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.custom__header-lead {
+  min-height: 670px;
+}
+
+.custom__header-lead .btn {
+  font-size: 12px;
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  padding: 20px 45px;
+}
+
+
+/*Section About us*/
+.about_us {
+  max-width: 620px;
+  margin: 95px auto;
+}
+
+/*Section Skills*/
+.section__skills {
+  position: relative;
+  background-color: #f8f9f9;
+  min-height: 570px;
+}
+
+.section__skills::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  background-image: url("../images/one-page/about-us.jpg");
+  background-repeat: no-repeat;
+  background-size: auto 570px;
+  background-position: center;
+}
+
+.section__skills .skills__list-wrapper {
+  min-height: 570px;
+}
+
+.section__skills .skills__list h3 {
+  font-size: 12px;
+  text-transform: uppercase;
+  margin: 15px 0;
+}
+
+.section__skills .skills__item {
+  margin-top: 40px;
+}
+
+
+/*Section achievements*/
+.section__achievements {
+  font-weight: 500;
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  color: #ffffff;
+}
+
+.section__achievements .achievements__item {
+  position: relative;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  padding-left: 65px;
+}
+
+.section__achievements .achievements__item::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 45px 45px;
+}
+
+.section__achievements .achievements__item--project::before {
+  background-image: url("../images/home/portfolio.svg");
+}
+
+.section__achievements .achievements__item--hours::before {
+  background-image: url("../images/home/clock.svg");
+}
+
+.section__achievements .achievements__item--feedback::before {
+  background-image: url("../images/home/star.svg");
+}
+
+.section__achievements .achievements__item--clients::before {
+  background-image: url("../images/home/like.svg");
+}
+
+.section__achievements .achievements__item span {
+  font-size: 18px;
+}
+
+.section__achievements .achievements__item p {
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+/*.section__products {*/
+.section__products .container-fluid {
+  background-color: #dbdbdb;  
+}
+
+.section__products a {
+  color: #8e8e8e;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.section__products li {
+  position: relative;
+  cursor: pointer;
+}
+
+.section__products li:hover::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  background-image: url("../images/home/look.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 48px 45px;
+}
+
+/*Section Our Works */
+.section__our_works {
+  margin-bottom: 100px;
+}
+.section__our_works .our_works-lead {
+    max-width: 620px;
+    margin: 95px auto 45px;
+    text-align: center;
+  }
+
+.section__our_works .our_works-video-container {
+    position: relative;
+    box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.10);
+}
+.section__our_works .our_works-video-container .play-btn {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 85px;
+      height: 85px;
+      border-radius: 50%;
+      background-color: #10c9c3;
+      border: none;
+}
+.section__our_works .our_works-video-container .play-btn::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-4px, -11px);
+        width: 0;
+        height: 0;
+        border: 11px solid transparent;
+        border-left: 11px solid #ffffff;
+      }
+
+.section__our_works .our_works-video-container .play-btn:hover, .section__our_works .our_works-video-container .play-btn:foces {
+        background-color: darken($color: #10c9c3, $amount: 10);
+        transition: background-color 250ms;
+      }
+
+/*Services section*/
+.section__our_services {
+  background-color: #f5f5f5;
+}
+
+.section__our_services .our_servises-container {
+  padding-top: 85px;
+  padding-bottom: 65px;
+}
+
+.section__our_services .servises-item {
+  position: relative;
+  padding-top: 80px;
+  margin-bottom: 35px;
+  text-align: center;
+}   
+
+.section__our_services .servises-item::before {
+  content: "";
+  position: absolute;
+  opacity: 0.5;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 50px;
+  height: 50px;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.section__our_services .servises-item--ui::before {
+  background-image: url("../images/home/diamond.svg");
+  background-size: 44px 45px;
+}
+
+.section__our_services .servises-item--web::before {
+  background-image: url("../images/home/arc.svg");
+  background-size: 42px 45px;
+}
+
+.section__our_services .servises-item--app::before {
+  background-image: url("../images/home/phone.svg");
+  background-size: 50px 45px;
+}
+
+.section__our_services .servises-item--game::before {
+  background-image: url("../images/home/joy.svg");
+  background-size: 46px 45px;
+}
+
+.section__our_services .servises-item--seo::before {
+  background-image: url("../images/home/plane.svg");
+  background-size: 50px 45px;
+}
+
+.section__our_services .servises-item--photo::before {
+  background-image: url("../images/home/star-black.svg");
+  background-size: 50px 45px;
+}
+
+.section__our_services .servises-item--design::before {
+  background-image: url("../images/home/coffee.svg");
+  background-size: 50px 45px;
+}
+
+.section__our_services .servises-item--illustrations::before {
+  background-image: url("../images/home/box1.svg");
+  background-size: 50px 45px;
+}
+
+.section__our_services .servises-item h5 {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.section__our_services .servises-item p {
+  font-size: 16px;
+  color: #787878;
+}
+
+/*Section reviews*/
+.reviews {
+  background-color: #10c9c3;
+  color: #ffffff;
+}  
+
+.reviews .review-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    text-align: center;
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+
+/*Sections partners */
+.parnners {
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+
+/*Section form*/
+.section-form {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #f5f5f5;
+}
+
+/*Section footer*/
+.footer-container {
+  color: #ffffff;
+  background-color: #141414;
+  padding-top: 70px;
+  padding-bottom: 50px;
+}
+
+@media (max-width: 992px) {
+  .custom__header {
+    min-height: 370px;
+    background-color: #dee8ea;
+    background-image: url("../images/one-page/header-background.jpg");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: cover;
+  }
+
+  .custom__header-lead {
+    min-height: 370px;
+  }
+
+  /*Section Skills*/
+  .section__skills { 
+    min-height: 470px;
+  }
+  .section__skills::after {
+    display: none;
+  }
+
+  .section__skills .skills__list-wrapper {
+    min-height: 470px;
+  }
+}
+
