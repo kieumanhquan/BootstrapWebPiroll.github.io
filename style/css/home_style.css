@@ -128,6 +128,8 @@ body{
 
 .img1 img, .img2 img{
   margin-bottom: -5px;
+  width: 100%;
+  height: auto;
 }
 
 .img1, .img2{
